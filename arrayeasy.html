@@ -1,0 +1,303 @@
+
+    <!-- Main -->
+    <main class="main px-lg-6">
+        <!-- Content -->
+        <div class="container-lg">
+          <!-- Page header -->
+          <div class="row align-items-center mb-7">
+            <div class="col-auto">
+              <!-- Avatar -->
+              <div class="avatar avatar-xl rounded text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fs-2 duo-icon duo-icon-user" data-duoicon="user"><path fill="currentColor" d="M12 13c2.396 0 4.575.694 6.178 1.671.8.49 1.484 1.065 1.978 1.69.486.616.844 1.352.844 2.139 0 .845-.411 1.511-1.003 1.986-.56.45-1.299.748-2.084.956-1.578.417-3.684.558-5.913.558s-4.335-.14-5.913-.558c-.785-.208-1.524-.506-2.084-.956C3.41 20.01 3 19.345 3 18.5c0-.787.358-1.523.844-2.139.494-.625 1.177-1.2 1.978-1.69C7.425 13.694 9.605 13 12 13Z" class="duoicon-primary-layer"></path><path fill="currentColor" d="M12 2c3.849 0 6.255 4.167 4.33 7.5A5 5 0 0 1 12 12c-3.849 0-6.255-4.167-4.33-7.5A5 5 0 0 1 12 2Z" class="duoicon-secondary-layer" opacity=".3"></path></svg>
+              </div>
+            </div>
+            <div class="col">
+              <!-- Breadcrumb -->
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-2">
+                  <li class="breadcrumb-item"><a class="text-body-secondary" href="#">Customers</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Customers</li>
+                </ol>
+              </nav>
+  
+              <!-- Heading -->
+              <h1 class="fs-4 mb-0">Customers</h1>
+            </div>
+            <div class="col-12 col-sm-auto mt-4 mt-sm-0">
+              <!-- Action -->
+              <a class="btn btn-secondary d-block" href="#!"> <span class="material-symbols-outlined me-1">add</span> New customer </a>
+            </div>
+          </div>
+  
+          <!-- Page content -->
+          <div class="row">
+            <div class="col-12">
+              <!-- Filters -->
+              <div class="card card-line bg-body-tertiary border-transparent mb-7">
+                <div class="card-body p-4">
+                  <div class="row align-items-center">
+                    <div class="col-12 col-lg-auto mb-3 mb-lg-0">
+                      <div class="row align-items-center">
+                        <div class="col-auto">
+                          <div class="text-body-secondary">3 contacts selected</div>
+                        </div>
+                        <div class="col-auto border-start border-dark">
+                          <a class="badge text-bg-danger" href="#"> Delete </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg">
+                      <div class="row gx-3">
+                        <div class="col col-lg-auto ms-auto">
+                          <div class="input-group bg-body">
+                            <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="search">
+                            <span class="input-group-text" id="search">
+                              <span class="material-symbols-outlined">search</span>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="dropdown">
+                            <button class="btn btn-dark px-3" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                              <span class="material-symbols-outlined">filter_list</span>
+                            </button>
+                            <div class="dropdown-menu rounded-3 p-6">
+                              <h4 class="fs-lg mb-4">Filter</h4>
+                              <form style="width: 350px" id="filterForm">
+                                <div class="row align-items-center mb-3">
+                                  <div class="col-3">
+                                    <label class="form-label mb-0" for="filterUser">User</label>
+                                  </div>
+                                  <div class="col-9">
+                                    <div class="choices" data-type="select-one" tabindex="0" role="listbox" aria-label="User" aria-haspopup="true" aria-expanded="false"><div class="form-select"><select class="form-select form-control" id="filterUser" data-choices="{&quot;searchEnabled&quot;: false, &quot;choices&quot;: [
+                                    {
+                                      &quot;value&quot;: &quot;Emily Thompson&quot;,
+                                      &quot;label&quot;: &quot;Emily Thompson&quot;,
+                                      &quot;customProperties&quot;: {
+                                        &quot;avatarSrc&quot;: &quot;../assets/img/photos/photo-1.jpg&quot;
+                                      }
+                                    },
+                                    {
+                                      &quot;value&quot;: &quot;Michael Johnson&quot;,
+                                      &quot;label&quot;: &quot;Michael Johnson&quot;,
+                                      &quot;customProperties&quot;: {
+                                        &quot;avatarSrc&quot;: &quot;../assets/img/photos/photo-2.jpg&quot;
+                                      }
+                                    },
+                                    {
+                                      &quot;value&quot;: &quot;Robert Garcia&quot;,
+                                      &quot;label&quot;: &quot;Robert Garcia&quot;,
+                                      &quot;customProperties&quot;: {
+                                        &quot;avatarSrc&quot;: &quot;../assets/img/photos/photo-3.jpg&quot;
+                                      }
+                                    },
+                                    {
+                                      &quot;value&quot;: &quot;Jessica Miller&quot;,
+                                      &quot;label&quot;: &quot;Jessica Miller&quot;,
+                                      &quot;customProperties&quot;: {
+                                        &quot;avatarSrc&quot;: &quot;../assets/img/photos/photo-4.jpg&quot;
+                                      }
+                                    }
+                                  ]}" hidden="" tabindex="-1" data-choice="active"><option value="Emily Thompson" data-custom-properties="{&quot;avatarSrc&quot;:&quot;../assets/img/photos/photo-1.jpg&quot;}" selected="">Emily Thompson</option><option value="Michael Johnson" data-custom-properties="{&quot;avatarSrc&quot;:&quot;../assets/img/photos/photo-2.jpg&quot;}">Michael Johnson</option><option value="Robert Garcia" data-custom-properties="{&quot;avatarSrc&quot;:&quot;../assets/img/photos/photo-3.jpg&quot;}">Robert Garcia</option><option value="Jessica Miller" data-custom-properties="{&quot;avatarSrc&quot;:&quot;../assets/img/photos/photo-4.jpg&quot;}">Jessica Miller</option></select><div class="choices__list choices__list--single"><div class="choices__item choices__item--selectable" data-item="" data-id="1" data-value="Emily Thompson" data-custom-properties="{&quot;avatarSrc&quot;:&quot;../assets/img/photos/photo-1.jpg&quot;}" aria-selected="true" role="option">Emily Thompson</div></div></div><div class="choices__list dropdown-menu" aria-expanded="false"><div class="choices__list" role="listbox"><div class="choices__item dropdown-item choices__item--selectable is-highlighted" data-select-text="Press to select" data-choice="" data-choice-selectable="" data-id="1" data-value="Emily Thompson" role="option" aria-selected="true">
+                
+              <div class="avatar avatar-xs me-3">
+                <img class="avatar-img" src="../assets/img/photos/photo-1.jpg" alt="Emily Thompson">
+              </div> Emily Thompson
+            
+              </div><div class="choices__item dropdown-item choices__item--selectable" data-select-text="Press to select" data-choice="" data-choice-selectable="" data-id="2" data-value="Michael Johnson" role="option">
+                
+              <div class="avatar avatar-xs me-3">
+                <img class="avatar-img" src="../assets/img/photos/photo-2.jpg" alt="Michael Johnson">
+              </div> Michael Johnson
+            
+              </div><div class="choices__item dropdown-item choices__item--selectable" data-select-text="Press to select" data-choice="" data-choice-selectable="" data-id="3" data-value="Robert Garcia" role="option">
+                
+              <div class="avatar avatar-xs me-3">
+                <img class="avatar-img" src="../assets/img/photos/photo-3.jpg" alt="Robert Garcia">
+              </div> Robert Garcia
+            
+              </div><div class="choices__item dropdown-item choices__item--selectable" data-select-text="Press to select" data-choice="" data-choice-selectable="" data-id="4" data-value="Jessica Miller" role="option">
+                
+              <div class="avatar avatar-xs me-3">
+                <img class="avatar-img" src="../assets/img/photos/photo-4.jpg" alt="Jessica Miller">
+              </div> Jessica Miller
+            
+              </div></div></div></div>
+                                  </div>
+                                </div>
+                                <div class="row align-items-center mb-3">
+                                  <div class="col-3">
+                                    <label class="form-label mb-0" for="filterCompany">Company</label>
+                                  </div>
+                                  <div class="col-9">
+                                    <div class="choices" data-type="select-one" tabindex="0" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false"><div class="form-select"><select class="form-select form-control" id="filterCompany" data-choices="{&quot;placeholder&quot;: &quot;some&quot;}" hidden="" tabindex="-1" data-choice="active">
+                                      <option value="TechPinnacle Solutions" selected="">TechPinnacle Solutions</option>
+                                      <option value="Quantum Dynamics">Quantum Dynamics</option>
+                                      <option value="Pinnacle Technologies">Pinnacle Technologies</option>
+                                      <option value="Apex Innovations">Apex Innovations</option>
+                                    </select><div class="choices__list choices__list--single" role="listbox"><div class="choices__item choices__item--selectable" data-item="" data-id="1" data-value="TechPinnacle Solutions" aria-selected="true" role="option">TechPinnacle Solutions</div></div></div><div class="choices__list dropdown-menu" aria-expanded="false"><input type="search" class="form-control form-control-sm" autocomplete="off" autocapitalize="off" spellcheck="false" role="textbox" aria-autocomplete="list" aria-label="Company" placeholder=""><div class="choices__list" role="listbox"><div class="choices__item dropdown-item choices__item--selectable is-highlighted" data-select-text="Press to select" data-choice="" data-choice-selectable="" data-id="1" data-value="TechPinnacle Solutions" role="option" aria-selected="true">
+                TechPinnacle Solutions
+              </div><div class="choices__item dropdown-item choices__item--selectable" data-select-text="Press to select" data-choice="" data-choice-selectable="" data-id="2" data-value="Quantum Dynamics" role="option">
+                Quantum Dynamics
+              </div><div class="choices__item dropdown-item choices__item--selectable" data-select-text="Press to select" data-choice="" data-choice-selectable="" data-id="3" data-value="Pinnacle Technologies" role="option">
+                Pinnacle Technologies
+              </div><div class="choices__item dropdown-item choices__item--selectable" data-select-text="Press to select" data-choice="" data-choice-selectable="" data-id="4" data-value="Apex Innovations" role="option">
+                Apex Innovations
+              </div></div></div></div>
+                                  </div>
+                                </div>
+                                <div class="row align-items-center">
+                                  <div class="col-3">
+                                    <label class="form-label mb-0" for="filterLocation">Location</label>
+                                  </div>
+                                  <div class="col-9">
+                                    <div class="choices" data-type="select-one" tabindex="0" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false"><div class="form-select"><select class="form-select form-control" id="filterLocation" data-choices="" hidden="" tabindex="-1" data-choice="active">
+                                      <option value="San Francisco, CA" selected="">San Francisco, CA</option>
+                                      <option value="Austin, TX">Austin, TX</option>
+                                      <option value="Miami, FL">Miami, FL</option>
+                                      <option value="Seattle, WA">Seattle, WA</option>
+                                    </select><div class="choices__list choices__list--single" role="listbox"><div class="choices__item choices__item--selectable" data-item="" data-id="1" data-value="San Francisco, CA" aria-selected="true" role="option">San Francisco, CA</div></div></div><div class="choices__list dropdown-menu" aria-expanded="false"><input type="search" class="form-control form-control-sm" autocomplete="off" autocapitalize="off" spellcheck="false" role="textbox" aria-autocomplete="list" aria-label="Location" placeholder=""><div class="choices__list" role="listbox"><div class="choices__item dropdown-item choices__item--selectable is-highlighted" data-select-text="Press to select" data-choice="" data-choice-selectable="" data-id="1" data-value="San Francisco, CA" role="option" aria-selected="true">
+                San Francisco, CA
+              </div><div class="choices__item dropdown-item choices__item--selectable" data-select-text="Press to select" data-choice="" data-choice-selectable="" data-id="2" data-value="Austin, TX" role="option">
+                Austin, TX
+              </div><div class="choices__item dropdown-item choices__item--selectable" data-select-text="Press to select" data-choice="" data-choice-selectable="" data-id="3" data-value="Miami, FL" role="option">
+                Miami, FL
+              </div><div class="choices__item dropdown-item choices__item--selectable" data-select-text="Press to select" data-choice="" data-choice-selectable="" data-id="4" data-value="Seattle, WA" role="option">
+                Seattle, WA
+              </div></div></div></div>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-auto ms-n2">
+                          <div class="dropdown">
+                            <button class="btn btn-dark px-3" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                              <span class="material-symbols-outlined">sort_by_alpha</span>
+                            </button>
+                            <div class="dropdown-menu rounded-3 p-6">
+                              <h4 class="fs-lg mb-4">Sort</h4>
+                              <form style="width: 350px" id="filterForm">
+                                <div class="row gx-3">
+                                  <div class="col">
+                                    <div class="choices" data-type="select-one" tabindex="0" role="listbox" aria-haspopup="true" aria-expanded="false"><div class="form-select"><select class="form-select form-control" id="sort" data-choices="{&quot;searchEnabled&quot;: false}" hidden="" tabindex="-1" data-choice="active">
+                                      <option value="user" selected="">User</option>
+                                      <option value="company">Company</option>
+                                      <option value="phone">Phone</option>
+                                      <option value="location">Location</option>
+                                    </select><div class="choices__list choices__list--single"><div class="choices__item choices__item--selectable" data-item="" data-id="1" data-value="user" aria-selected="true" role="option">User</div></div></div><div class="choices__list dropdown-menu" aria-expanded="false"><div class="choices__list" role="listbox"><div class="choices__item dropdown-item choices__item--selectable is-highlighted" data-select-text="Press to select" data-choice="" data-choice-selectable="" data-id="1" data-value="user" role="option" aria-selected="true">
+                User
+              </div><div class="choices__item dropdown-item choices__item--selectable" data-select-text="Press to select" data-choice="" data-choice-selectable="" data-id="2" data-value="company" role="option">
+                Company
+              </div><div class="choices__item dropdown-item choices__item--selectable" data-select-text="Press to select" data-choice="" data-choice-selectable="" data-id="3" data-value="phone" role="option">
+                Phone
+              </div><div class="choices__item dropdown-item choices__item--selectable" data-select-text="Press to select" data-choice="" data-choice-selectable="" data-id="4" data-value="location" role="option">
+                Location
+              </div></div></div></div>
+                                  </div>
+                                  <div class="col-auto">
+                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                      <input type="radio" class="btn-check" name="sortRadio" id="sortAsc" autocomplete="off" checked="">
+                                      <label class="btn btn-light" for="sortAsc" data-bs-toggle="tooltip" data-bs-title="Ascending">
+                                        <span class="material-symbols-outlined">arrow_upward</span>
+                                      </label>
+                                      <input type="radio" class="btn-check" name="sortRadio" id="sortDesc" autocomplete="off">
+                                      <label class="btn btn-light" for="sortDesc" data-bs-toggle="tooltip" data-bs-title="Descending">
+                                        <span class="material-symbols-outlined">arrow_downward</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Table -->
+              <div class="table-responsive mb-7">
+                <table class="table table-selectable align-middle mb-0">
+                  <thead>
+                    <tr><th style="width: 0px">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="tableCheckAll">
+                        <label class="form-check-label" for="tableCheckAll"></label>
+                      </div>
+                    </th>
+                    <th>User</th>
+                    <th>Company</th>
+                    <th>Phone</th>
+                    <th>Location</th>
+                  </tr></thead>
+                  <tbody>
+                    <tr>
+                      <td style="width: 0px">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="tableCheckOne">
+                          <label class="form-check-label" for="tableCheckOne"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <div class="avatar">
+                            <img class="avatar-img" src="ge" alt="...">
+                          </div>
+                          <div class="ms-4">
+                            <div>John Williams</div>
+                            <div class="fs-sm text-body-secondary">
+                              <a class="text-reset" href="mailto:james.smith@example.com">james.smith@example.com</a>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>TechPinnacle Solutions</td>
+                      <td>
+                        <a class="text-muted" href="tel:(202) 555-0126">(202) 555-0126</a>
+                      </td>
+                      <td>San Francisco, CA</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col">
+              <!-- Text -->
+              <p class="text-body-secondary mb-0">1 – 10 (2550 total)</p>
+            </div>
+            <div class="col-auto">
+              <!-- Pagination -->
+              <nav aria-label="Page navigation example">
+                <ul class="pagination mb-0">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">«</span>
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link active" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">»</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </main>
+  
